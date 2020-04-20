@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    </head>
+    <style>
+        iframe {
+           padding: 0px;
+           border: 0px;
+        }
+    </style>
+    <script>
+        function contentsHeight() {
+          let min = 10000;
+          let max = 21660;
+          let height = min;
+          let width = document.body.clientWidth;
+          if (width < 760) height = min + max - 28 * width;
+          document.querySelector("#target").setAttribute("height",height);
+        }
+        window.onload = contentsHeight;
+        window.onresize = contentsHeight;
+    </script>
+    <body>
+        <iframe id="target" sandbox="allow-same-origin allow-scripts" width="100%" scrolling="no" src="https://docs.google.com/document/d/e/2PACX-1vRLdCYNfbq8XVGlSLSPU_9ELFSfjjjaZKk68n3T8wvAklLXeYE8_HKKO083P9bDuF2RMOq_oNji_A-w/pub?embedded=true"></iframe>
+    </body>
+</html>
