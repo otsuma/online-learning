@@ -3,14 +3,15 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <style>
+          #target {
+            padding: 0px;
+            border: 0px;
+          }
+        </style>
     </head>
-        #target {
-           padding: 0px;
-           border: 0px;
-        }
-    </style>
-    <script>
+    <body>
+      <script>
         function contentsHeight() {
           let min = 10000;
           let max = 21660;
@@ -21,8 +22,7 @@
         }
         window.onload = contentsHeight;
         window.onresize = contentsHeight;
-    </script>
-    <body>
-        <iframe id="target" sandbox="allow-same-origin allow-scripts" width="100%" scrolling="no" src="https://docs.google.com/document/d/e/2PACX-1vRLdCYNfbq8XVGlSLSPU_9ELFSfjjjaZKk68n3T8wvAklLXeYE8_HKKO083P9bDuF2RMOq_oNji_A-w/pub?embedded=true"></iframe>
+      </script>
+      <iframe id="target" sandbox="allow-same-origin allow-scripts" width="100%" scrolling="no" src="https://docs.google.com/document/d/e/2PACX-1vRLdCYNfbq8XVGlSLSPU_9ELFSfjjjaZKk68n3T8wvAklLXeYE8_HKKO083P9bDuF2RMOq_oNji_A-w/pub?embedded=true"></iframe>
     </body>
 </html>
